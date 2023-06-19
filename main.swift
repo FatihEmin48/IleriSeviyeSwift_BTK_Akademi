@@ -7,7 +7,7 @@
 
 import Foundation
 
-// MARK: -Struct
+// MARK: - Struct
 
 
 //Struct -> İnheritance yok, Stack - filo(first in last out) (RAM), value type, immutable, daha hızlı, daha basit
@@ -56,7 +56,7 @@ fatihStruct.yasiBirArttir()
 print(fatihStruct.yas)
 
 
-// MARK: -Tuple
+// MARK: - Tuple
 
 var benimTuple = (10,20)
 print(benimTuple.0)
@@ -82,3 +82,28 @@ print(benimOncedenBelirlenenTuple)
 let yeniTuple = (isim:"Fatih", ikinciIsim: "Emin", soyisim: "Karahan")
 print(yeniTuple)
 print(yeniTuple.isim)
+
+
+// MARK: - Guard Let
+
+//Olmazsa ne yapacağını yazıyoruz
+
+let numaraStringi = "5"
+
+func inteCevirenIfLetFonksiyonu(string : String) -> Int{
+    if let benimIntegerim = Int(string){
+        return benimIntegerim
+    } else {
+        return 0
+    }
+}
+
+print(inteCevirenIfLetFonksiyonu(string: numaraStringi))
+
+func inteCevirenGuardLetFonksiyonu(string: String) -> Int{
+    guard let benimIntegerim = Int(string) else { //Bunda yapamazsa direkt olumsuzu yazıyoruz
+        return 0
+    }
+    return benimIntegerim
+}
+print(inteCevirenGuardLetFonksiyonu(string: numaraStringi))
