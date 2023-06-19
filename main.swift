@@ -107,3 +107,21 @@ func inteCevirenGuardLetFonksiyonu(string: String) -> Int{
     return benimIntegerim
 }
 print(inteCevirenGuardLetFonksiyonu(string: numaraStringi))
+
+
+// MARK: - Switch Case
+
+let gunSayisi = 1
+var gunStringi = ""
+
+switch gunSayisi {
+case 1:
+    gunStringi = "Pazartesi"
+case 2:
+    gunStringi = "Salı"
+case 3:
+    gunStringi = "Çarşamba"
+default:
+    gunStringi = "Pazar"
+}
+print(gunStringi)
