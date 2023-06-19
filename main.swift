@@ -71,3 +71,14 @@ print(benimTuple3.0)
 
 let benimTuple4 = ("Fatih", [1,2,3,4])
 print(benimTuple4.1[2])
+
+let benimNumaram : Int?
+
+let benimOncedenBelirlenenTuple : (String, String)
+benimOncedenBelirlenenTuple.0 = "Fatih"
+benimOncedenBelirlenenTuple.1 = "Karahan"
+print(benimOncedenBelirlenenTuple)
+
+let yeniTuple = (isim:"Fatih", ikinciIsim: "Emin", soyisim: "Karahan")
+print(yeniTuple)
+print(yeniTuple.isim)
