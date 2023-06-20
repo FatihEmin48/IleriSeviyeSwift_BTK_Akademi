@@ -5,3 +5,4 @@
 - Switch Case
 - Breakpoint
 - Protocol
+- Closure
