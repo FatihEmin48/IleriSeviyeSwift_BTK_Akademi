@@ -125,3 +125,12 @@ default:
     gunStringi = "Pazar"
 }
 print(gunStringi)
+
+
+// MARK: - Breakpoint
+
+var sayi =  5
+print(sayi)
+//Satırda sayının üzerine tıklarsak breakpoint oluşturmuş oluruz, Run edilirken bu satırda durur ilerisine geçmez
+sayi = sayi + 1
+print(sayi)
